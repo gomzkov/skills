@@ -1,0 +1,7 @@
+interface:
+  display_name: "Say It Normally"
+  short_description: "Plain, natural writing without fake polish"
+  default_prompt: "Use $say-it-normally to rewrite this in plain, natural language."
+
+policy:
+  allow_implicit_invocation: true
