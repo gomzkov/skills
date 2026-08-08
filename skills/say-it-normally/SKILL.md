@@ -4,7 +4,7 @@ description: "Write or rewrite text in plain, natural language that sounds like 
 license: MIT
 metadata:
   author: gomzkov
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Say It Normally
@@ -14,11 +14,12 @@ Write like a smart person talking to another smart person. Keep the facts and re
 ## Process
 
 1. Work out who is speaking, who they are speaking to, and what the text needs to do.
-2. Preserve the meaning, useful details, bluntness, and humor already in the draft.
-3. Cut setup, repetition, and sentences that only sound polished.
-4. Replace abstract language with the actual thing, action, or result.
-5. Match the requested format and length.
-6. Read the result aloud. Rewrite anything that would sound strange in a normal conversation.
+2. Put the useful facts in the order the reader needs them. For an operational update, this is often: current state or blocker, reason, what happens next, then choices.
+3. Preserve the meaning, useful details, bluntness, and humor already in the draft.
+4. Cut setup, repetition, and sentences that only sound polished.
+5. Replace abstract language with the actual thing, action, or result.
+6. Match the requested format and length.
+7. Read the result aloud. Rewrite anything that would sound strange in a normal conversation.
 
 Ask a question only when missing information would materially change the claim. Never invent facts, numbers, results, or confidence.
 
@@ -49,7 +50,7 @@ Do not remove precise technical terms when they are needed for accuracy.
 - **Portfolio sections:** Use a short heading and one normal sentence. Keep card descriptions to three visual lines or fewer.
 - **LinkedIn roles:** Prefer two to four factual bullets that start with verbs. Cover the work, responsibility, or progression without self-praise.
 - **Social posts:** Start with the point. Skip forced hooks, lessons, and recap endings.
-- **Messages:** Make the ask or update clear early. Write like something a person would actually send in Slack or WhatsApp.
+- **Messages:** Make the ask or update clear early. Write like something a person would actually send in Slack or WhatsApp. When someone asks how they can help, separate what will happen anyway from the actions that would change the timing or outcome.
 
 Read [references/examples.md](references/examples.md) before writing website, README, LinkedIn, bio, social, or personal-message copy.
 

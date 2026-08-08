@@ -69,3 +69,13 @@ Avoid:
 Prefer:
 
 > Can you look at the new onboarding flow today? I mainly want to know where it gets confusing.
+
+For operational updates, keep the causal chain and remove the scaffolding.
+
+Avoid:
+
+> The current blocker is deployment approval. The infrastructure team is focused on incident work, and when they are done they can review it. Once we have approval, we can release. So, to answer your question, either we wait for them to finish the incident work, free them from it, or get more people involved.
+
+Prefer:
+
+> Deployment approval is the blocker. The infrastructure team can review it after the incident work, then we can release. So we can wait, free them up sooner, or add more hands.
