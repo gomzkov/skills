@@ -1,15 +1,14 @@
 # Contributing
 
-Keep each skill focused on one job. A person should be able to understand what it does from the name and description alone.
+Keep each skill focused on one job. Its name and description should make that job clear.
 
-## Adding or changing a skill
+## Add or update a skill
 
 1. Put the skill in `skills/<skill-name>/`.
 2. Follow the [Agent Skills specification](https://agentskills.io/specification).
-3. Keep detailed examples and background in `references/` so the main `SKILL.md` stays short.
-4. Do not include private data, client details, credentials, or examples that depend on personal context.
-5. Update the skill list in `README.md`.
-6. Check that the installer can find it:
+3. Keep `SKILL.md` short. Add supporting files only when they change how the skill works.
+4. Remove private data, credentials, client details, and personal examples.
+5. Validate the skill, update the skill table in `README.md`, then check installer discovery:
 
 ```sh
 npx skills@latest add . --list
@@ -17,11 +16,4 @@ npx skills@latest add . --list
 
 ## Commits
 
-Use [Conventional Commits](https://www.conventionalcommits.org/):
-
-- `feat:` for a new skill or capability
-- `fix:` for a behavior correction
-- `docs:` for documentation only
-- `chore:` for maintenance
-
-Keep the subject short and explain the reason in the commit body when it is not obvious from the diff.
+Use [Conventional Commits](https://www.conventionalcommits.org/) with a short, specific subject. Add a commit body only when the reason is not clear from the diff.

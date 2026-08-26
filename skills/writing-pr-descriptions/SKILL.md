@@ -1,26 +1,23 @@
 ---
 name: writing-pr-descriptions
-description: "Writes concise pull request titles and PR descriptions after inspecting the full diff, included commits, repository guidance, and actual testing. Use for requests to create PRs, open PRs, or draft or update a PR description."
+description: "Writes pull request titles and PR descriptions that reviewers can understand in 30 seconds. Use when asked to create PRs, open PRs, or draft or update a PR description."
 license: MIT
 metadata:
   author: gomzkov
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Writing PR Descriptions
 
-Write a pull request that a reviewer can understand in 30 seconds.
+The reviewer should understand the pull request in 30 seconds.
 
-## Gather the evidence
+## Inspect first
 
-Before drafting:
-
-1. Identify the base branch from the request, repository metadata, or hosting service.
-2. Inspect the complete diff from the base branch's merge base to the PR head. Read the full diff, not only the file list or summary.
+1. Identify the base branch from the request, repository, or hosting service.
+2. Read the complete diff from the base branch to the PR head, including any uncommitted changes intended for the PR.
 3. Read every commit included in the PR.
-4. Read the repository's PR template, contribution guide, and relevant repository instructions.
-5. Collect evidence of tests and manual checks that were actually performed. Do not infer testing from changed test files.
-6. When updating an existing PR, read its current title and body before replacing them.
+4. Read the PR template, contribution guide, repository instructions, and existing PR body when updating one.
+5. Collect the tests and manual checks that were actually performed. Do not infer testing from changed test files.
 
 Typical local commands are:
 
@@ -41,9 +38,7 @@ Use Conventional Commits:
 {type}: {short imperative description}
 ```
 
-Choose the type that best describes the main outcome: `feat`, `fix`, `chore`, `refactor`, `docs`, `test`, `build`, or `ci`.
-
-Keep the description short, specific, and imperative. Do not end it with a period.
+Use `feat`, `fix`, `chore`, `refactor`, `docs`, `test`, `build`, or `ci`. Keep the description short, specific, imperative, and without a final period.
 
 ## Write the body
 
@@ -70,27 +65,16 @@ One-sentence summary of the outcome.
 - Optional important caveat
 ```
 
-- Include three to five specific `Changes` bullets. Cover behavior, purpose, impact, and decisions that help the reviewer.
-- List only tests that were run. Use exact commands when they are known.
-- Describe manual verification plainly. If an important area was not tested, say so and explain why when useful.
-- Include `Notes` only for a meaningful caveat, rollout concern, or follow-up. Omit it otherwise.
-- Add a ticket link only when one is available. Never invent one.
-- Preserve required template headings, checklists, and repository-specific instructions. Apply this writing style within that structure.
-- Omit empty or irrelevant optional sections.
-
-## Keep it useful
-
-- Focus on what changed, why it matters, and what the reviewer should pay attention to.
-- Mention implementation details only when they affect behavior, compatibility, risk, or review.
-- Do not narrate files, restate commit messages, or explain obvious code changes.
-- Prefer short sentences and scannable bullets over long paragraphs.
-- Remove repetition, corporate jargon, and filler such as "comprehensive," "robust," "enhanced," and "seamless."
-- Do not claim results, coverage, compatibility, or safety that the evidence does not support.
+- Include three to five `Changes` bullets about behavior, purpose, impact, and reviewer-relevant decisions. Do not narrate files or commits.
+- List only tests that ran. Include exact commands and manual checks when known. State important untested areas honestly.
+- Include `Notes` only for a meaningful caveat, rollout concern, or follow-up. Omit empty sections.
+- Preserve required template headings and checklists. Add a ticket only when one is available.
+- Use short sentences and bullets. Remove repetition, jargon, filler, and unsupported claims.
 
 See [references/examples.md](references/examples.md) for one good and one bad example.
 
 ## Output
 
-Return the proposed title and body first. Explain a choice only when it needs reviewer context or the user asks.
+Return the title and body first. Explain a choice only when it needs context or the user asks.
 
 If the user asked to create, open, or update the PR, use the final title and body with the available hosting tool, then report the resulting PR link or the exact blocker.

@@ -1,7 +1,7 @@
 interface:
   display_name: "Say It Normally"
-  short_description: "Plain, natural responses for any writing task"
-  default_prompt: "Use $say-it-normally to write this response in plain, natural language."
+  short_description: "Clear, direct, natural responses"
+  default_prompt: "Use $say-it-normally to make this response clear, direct, and natural."
 
 policy:
   allow_implicit_invocation: true

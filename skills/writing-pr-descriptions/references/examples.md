@@ -2,9 +2,9 @@
 
 ## Good
 
-```markdown
-Title: fix: preserve filters during pagination
+Title: `fix: preserve filters during pagination`
 
+```markdown
 Keeps active search and status filters applied when users move between result pages.
 
 ## Changes
@@ -19,13 +19,13 @@ Keeps active search and status filters applied when users move between result pa
 - Manually paginated results with one filter, multiple filters, and no filters.
 ```
 
-This example states the user-visible outcome, gives the reviewer three concrete facts, and names the checks that were run. It omits `Notes` because there is no meaningful caveat.
+Why it works: the outcome is clear, the changes are specific, and the checks are exact. `Notes` is omitted because there is no caveat.
 
 ## Bad
 
-```markdown
-Title: enhanced: comprehensive pagination improvements
+Title: `enhanced: comprehensive pagination improvements`
 
+```markdown
 This PR provides a robust and enhanced pagination experience.
 
 ## Changes
@@ -43,4 +43,4 @@ This PR provides a robust and enhanced pagination experience.
 - N/A
 ```
 
-This example uses an unsupported title type, filler words, file narration, vague changes, an unverifiable testing claim, and an empty `Notes` section.
+Why it fails: unsupported title type, filler, file narration, vague changes, an unverifiable test claim, and an empty `Notes` section.
