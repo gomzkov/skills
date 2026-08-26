@@ -26,6 +26,12 @@ Rewrites stiff or over-polished copy in plain, natural language without flatteni
 
 [Read the skill](skills/say-it-normally/SKILL.md)
 
+### `writing-pr-descriptions`
+
+Drafts Conventional Commit PR titles and concise descriptions from the full change and actual testing.
+
+[Read the skill](skills/writing-pr-descriptions/SKILL.md)
+
 ## Contributing
 
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) before adding or changing a skill.

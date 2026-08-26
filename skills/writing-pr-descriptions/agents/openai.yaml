@@ -1,0 +1,7 @@
+interface:
+  display_name: "Writing PR Descriptions"
+  short_description: "Reviewer-ready PR titles and descriptions"
+  default_prompt: "Use $writing-pr-descriptions to draft a title and body for this pull request."
+
+policy:
+  allow_implicit_invocation: true
