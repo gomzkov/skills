@@ -1,6 +1,6 @@
 # Agent skills
 
-Small skills I use to make AI agents more useful in day-to-day work.
+A collection of reusable skills for AI agents.
 
 ## Install
 
@@ -22,7 +22,7 @@ The repo follows the open [Agent Skills specification](https://agentskills.io/sp
 
 ### `say-it-normally`
 
-Rewrites stiff or over-polished copy in plain, natural language without flattening the writer's voice.
+Writes any agent response in plain, natural language without flattening its meaning or voice.
 
 [Read the skill](skills/say-it-normally/SKILL.md)
 
